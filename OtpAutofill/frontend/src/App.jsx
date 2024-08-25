@@ -8,18 +8,20 @@ const Blogs = React.lazy(() => import('./Pages/Blogs'));
 
 const App = () => {
   return (
-    <Router>
+    <div className='bg-customBackground'>
+    <Router >
       <Suspense fallback={<div>Loading Navbar...</div>}>
         <NavBar />
       </Suspense>
         <Suspense fallback={<div>Loading...</div>}>
-            <Routes>
+            <Routes >
               <Route path="/" element={<Home />} />
               <Route path="/support" element={<Support />} />
               <Route path="/blogs" element={<Blogs/>} />
             </Routes>
         </Suspense>
     </Router>
+    </div>
   );
 }
 

@@ -2,23 +2,28 @@ import { FaHeart , FaBookmark} from "react-icons/fa"
 
 const Context = () => {
   return (<>
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-500" >
-      <div className="container flex-col mx-auto px-10 bg-gray-300 rounded-3xl h-80">
-      FREE
-      <header className="w-full py-5 text-white mr-auto">
-        <h1 className="text-3xl font-bold">Gmail OTP Autofill</h1>
+  
+    <div className="w-10/12 ml-32  flex flex-col pt-20   h-screen border-black overflow-hidden" >
+    
+      <div className="container flex mx-auto px-10 bg-customContextblack  rounded-3xl h-5/6">
+      <div className="flex-col m-4 mt-10">
+      <div className="text-gray-500  w-3/12 rounded-md flex justify-center items-center border-2 border-cyan-300 bg-cyan-100">
+      FREE</div>
+      <header className="w-full py-5 font-serif text-white mr-auto">
+        <h1 className="text-5xl">AUTO FILL -  </h1>
+        <h1 className="text-5xl mt-3">Extension for auto</h1>
+        <h1 className="text-5xl mt-3">filling the OTP </h1>
       </header>
-      
-      <main className="flex-grow flex flex-col justify-center mr-auto">
-        <h2 className="text-2xl text-gray-800">DOWNLOAD NOW!!!</h2>
-        <p className="text-lg text-gray-600">alwahuihawuheduhahjhihweuih</p>
-      </main>
-      <div className="flex flex-row justify-align items-center space-x-2 py-12">
-      <button className="bg-blue-500 p-2">ADD TO CHROME</button>
-      <h3><FaHeart /></h3>
-      <h3><FaBookmark /></h3>
+      <div>
+      <div className="flex flex-row justify-align items-center space-x-2 pt-14  ">
+      <button className="bg-customBlue w-2/3 p-2 font-semibold rounded-md">ADD TO CHROME</button>
+      <div className=" border-2 rounded-md w-8 h-8 flex justify-center items-center "><FaHeart fill="white" /></div>
+      <div className=" border-2 rounded-md w-8 h-8 flex justify-center items-center "><FaBookmark fill="white" /></div>
       </div>
-      <h4>1678 Bn+ Active Users</h4>
+      <div className=" text-slate-200 text-lg pt-6" >100+ Active Users</div>
+      </div>
+      </div>
+      
       </div>
       
     </div>
